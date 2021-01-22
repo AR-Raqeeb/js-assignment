@@ -41,7 +41,8 @@ console.log(totalBudgetNeeded);
 // 3. Hotel Cost Management
 
 function hotelCost(numberOfDays){
-    var totalCost = numberOfDays;
+    var totalCost = numberOfDays;  // a temporary variable that holds total number of days, just to make the calculation easier
+    
     if(numberOfDays>=0 && numberOfDays <=10){
         totalCost = totalCost * 100; // 100tk per night for first 10 days.
         return totalCost;
@@ -90,5 +91,5 @@ function megaFriend(friendsName){
     return tempLongestName;
 }
 
-var longestName = megaFriend (["Akash", "Shuhin", "Arif", "Maizuddin", "Shorifullah", "Sangram", "Syed Muzakkir Ali", "Syed Mozumder Ali"]);
+var longestName = megaFriend (["Akash", "Shuhin", "Arif", "Maizuddin", "Shorifullah", "Sangram", "Syed Muzakkir Ali", "Syed Mozumder Ali"]);  // array element input 
 console.log(longestName);
